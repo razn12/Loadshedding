@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_height="65dp"
+        android:text="Sun"
+        android:gravity="center"
+        android:id="@+id/day"
+        android:textStyle="bold"
+
+
+        android:background="#e1e1d7"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10:00 am - 2:00 pm"
+            android:gravity="center"
+            android:id="@+id/phase1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10:00 am - 2:00 pm"
+            android:gravity="center"
+            android:id="@+id/phase2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_height="65dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight=".8"
+            android:layout_height="0dp"
+            android:id="@+id/bulb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:id="@+id/tim"
+
+            android:textSize="10dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

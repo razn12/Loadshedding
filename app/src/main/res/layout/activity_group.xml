@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_group1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.raazn.loadshedding.GroupTabs.Group1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:background="#664f9f">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".35"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight=".8"
+                android:layout_height="0dp"
+                android:background="#51329e"
+                android:id="@+id/light"
+                android:src="@drawable/on"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight=".2"
+                android:layout_height="0dp"
+                android:text="1:00 left"
+                android:background="#1b666e"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/timer"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".65"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="#51329e"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Group 1"
+                android:background="#dc970e"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:id="@+id/grp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:text="Phase 1: 7:30 pm - 12:00 pm"
+                android:background="#dddcde"
+                android:gravity="center"
+
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:id="@+id/p1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:text="Phase 2: 7:30 pm - 12:00 pm"
+                android:background="#dddcde"
+                android:gravity="center"
+
+                android:textSize="14dp"
+
+                android:padding="5dp"
+                android:id="@+id/p2"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:id="@+id/recycleView"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
