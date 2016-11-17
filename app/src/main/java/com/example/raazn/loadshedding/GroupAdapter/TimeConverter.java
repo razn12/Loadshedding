@@ -55,12 +55,12 @@ public class TimeConverter {
             result= true;
         }
         String s= String.valueOf(result);
-        System.out.println(lefttime);
+
 
         SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
         timeFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         String date3 = timeFormat.format(new Date(lefttime));
-        System.out.println("The left time is "+date3);
+
 
         return new String[]{s,date3};
 
@@ -76,7 +76,7 @@ public class TimeConverter {
         }
         SimpleDateFormat f2 = new SimpleDateFormat("HH:mm");
         String x = f2.format(d); // "23:00"
-        System.out.println(x);
+
         f2.setTimeZone(TimeZone.getTimeZone("UTC"));
         Date date1 = null;
 
@@ -85,7 +85,7 @@ public class TimeConverter {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        System.out.println(date1.getTime());
+
 
         return date1.getTime();
     }
