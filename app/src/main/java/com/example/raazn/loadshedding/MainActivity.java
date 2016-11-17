@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         viewPager.setAdapter(adapter);
         viewPager.setPageTransformer(true,new CubeOutTransformer());
 
+
+
         //Initializing the tablayout
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
